@@ -10,24 +10,77 @@ void ofApp::setup(){
     vector <ofSerialDeviceInfo> deviceList = serial.getDeviceList();
     
     int baud = 57600;
-    serial.setup(0, 57600);
-    //serial.setup("/dev/ttyUSB0", baud);
+    //serial.setup(0, 57600);
+    serial.setup("/dev/tty.usbmodem1421", baud);
     
     memset(bytesReadString, 0, 4);
     
+    currentEotmMovie = 0;
+    
+    ofVideoPlayer eotmMovie;
+    eotmMovie.load("movies/red.mp4");
+    eotmMovie.setLoopState(OF_LOOP_NONE);
+    eotmMovie.play();
+    eotmMovies.push_back(eotmMovie);
+    
+    ofVideoPlayer eotmMovie2;
+    eotmMovie2.load("movies/green.mp4");
+    eotmMovie2.setLoopState(OF_LOOP_NONE);
+    eotmMovies.push_back(eotmMovie2);
+    
+    ofVideoPlayer eotmMovie3;
+    eotmMovie3.load("movies/blue.mp4");
+    eotmMovie3.setLoopState(OF_LOOP_NONE);
+    eotmMovies.push_back(eotmMovie3);
+    
+    eotmMovies[0].setPosition(0.0f);
+    
+    ofSeedRandom();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    
+    nTimesRead = 0;
+    nBytesRead = 0;
+    int nRead  = 0;  // a temp variable to keep count per read
+    
+    unsigned char bytesReturned[3];
+    
     memset(bytesReadString, 0, 4);
-    eotmMovie.update();
+    memset(bytesReturned, 0, 3);
+    
+    while( (nRead = serial.readBytes( bytesReturned, 3)) > 0){
+        nTimesRead++;
+        nBytesRead = nRead;
+    };
+    
+    memcpy(bytesReadString, bytesReturned, 3);
+    
+    bSendSerialMessage = false;
+    readTime = ofGetElapsedTimef();
+    
+    if (ofToString(bytesReadString) == "1")
+        selectRandomMovie();
+    
+    for ( int i = 0; i < eotmMovies.size(); i++ )
+        eotmMovies[i].update();
 }
 
 //--------------------------------------------------------------
-void ofApp::draw(){
+void ofApp::draw()
+{
 
-    eotmMovie.draw(0,0);
+    eotmMovies[currentEotmMovie].draw(0,0);
 
+}
+
+void ofApp::selectRandomMovie()
+{
+    ofLog(ofLogLevel::OF_LOG_ERROR, "Selecting random movie to play!");
+    currentEotmMovie = ofRandom(0, 2);
+    eotmMovies[currentEotmMovie].firstFrame();
+    eotmMovies[currentEotmMovie].play();
 }
 
 //--------------------------------------------------------------
@@ -35,31 +88,19 @@ void ofApp::keyPressed  (int key){
     switch(key){
         case 'f':
             frameByframe=!frameByframe;
-            eotmMovie.setPaused(frameByframe);
+            eotmMovies[currentEotmMovie].setPaused(frameByframe);
         break;
         case OF_KEY_LEFT:
-            eotmMovie.previousFrame();
+            eotmMovies[currentEotmMovie].previousFrame();
         break;
         case OF_KEY_RIGHT:
-            eotmMovie.nextFrame();
+            eotmMovies[currentEotmMovie].nextFrame();
         break;
         case '0':
-            eotmMovie.firstFrame();
+            eotmMovies[currentEotmMovie].firstFrame();
         break;
         case 'r':
-            eotmMovie.load("movies/red.mp4");
-            eotmMovie.setLoopState(OF_LOOP_NORMAL);
-            eotmMovie.play();
-        break;
-        case 'g':
-            eotmMovie.load("movies/green.mp4");
-            eotmMovie.setLoopState(OF_LOOP_NORMAL);
-            eotmMovie.play();
-        break;
-        case 'b':
-            eotmMovie.load("movies/blue.mp4");
-            eotmMovie.setLoopState(OF_LOOP_NORMAL);
-            eotmMovie.play();
+            selectRandomMovie();
         break;
     }
 }
@@ -75,7 +116,7 @@ void ofApp::mouseMoved(int x, int y ){
         int width = ofGetWidth();
         float pct = (float)x / (float)width;
         float speed = (2 * pct - 1) * 5.0f;
-        eotmMovie.setSpeed(speed);
+        eotmMovies[currentEotmMovie].setSpeed(speed);
 	}
 }
 
@@ -84,14 +125,14 @@ void ofApp::mouseDragged(int x, int y, int button){
 	if(!frameByframe){
         int width = ofGetWidth();
         float pct = (float)x / (float)width;
-        eotmMovie.setPosition(pct);
+        eotmMovies[currentEotmMovie].setPosition(pct);
 	}
 }
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
 	if(!frameByframe){
-        eotmMovie.setPaused(true);
+        eotmMovies[currentEotmMovie].setPaused(true);
 	}
 }
 
@@ -99,7 +140,7 @@ void ofApp::mousePressed(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
 	if(!frameByframe){
-        eotmMovie.setPaused(false);
+        eotmMovies[currentEotmMovie].setPaused(false);
 	}
 }
 

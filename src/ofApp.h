@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#import <vector>
 
 class ofApp : public ofBaseApp{
 
@@ -22,7 +23,8 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);		
 
-		ofVideoPlayer 		eotmMovie;
+        std::vector<ofVideoPlayer> 		eotmMovies;
+        int                 currentEotmMovie;
 		bool                frameByframe;
     
         bool		bSendSerialMessage;			// a flag for sending serial
@@ -33,5 +35,7 @@ class ofApp : public ofBaseApp{
         float		readTime;					// when did we last read?
     
         ofSerial	serial;
+    
+        void selectRandomMovie();
 };
 
