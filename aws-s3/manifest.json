@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "base-url": "https://s3.amazonaws.com/s150-eotm/",
+  "current": {
+    "date": "102016",
+    "portrait-filename": "oct-2016-portrait.mov",
+    "landscape-filename": "oct-2016-landscape.mov",
+    "employee-name": "Paul Rudolph",
+  },
+  "past": [
+    {
+      "date": "092016",
+      "portrait-filename": "",
+      "landscape-filename": "",
+      "employee-name": ""
+    }
+  ]
+}
