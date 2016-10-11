@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72F08F3565E1427A4AF38076 /* libPods-EOTMPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD98E71264F164512051246 /* libPods-EOTMPlayer.a */; };
+		A9291B991DAC04450036B791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9291B981DAC04450036B791 /* main.m */; };
+		A9291B9C1DAC04450036B791 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9291B9B1DAC04450036B791 /* AppDelegate.m */; };
+		A9291B9F1DAC04450036B791 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9291B9E1DAC04450036B791 /* ViewController.m */; };
+		A9291BA21DAC04450036B791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9291BA01DAC04450036B791 /* Main.storyboard */; };
+		A9291BA41DAC04450036B791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9291BA31DAC04450036B791 /* Assets.xcassets */; };
+		A9291BAF1DAC04450036B791 /* EOTMPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9291BAE1DAC04450036B791 /* EOTMPlayerTests.m */; };
+		A9291BBA1DAC04450036B791 /* EOTMPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9291BB91DAC04450036B791 /* EOTMPlayerUITests.m */; };
+		A9291BCA1DAC04620036B791 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9291BC81DAC04620036B791 /* AVFoundation.framework */; };
+		A9291BCB1DAC04620036B791 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9291BC91DAC04620036B791 /* AVKit.framework */; };
+		A9FD73491DAC6CCC00A2704E /* EOTMVideoSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FD73481DAC6CCC00A2704E /* EOTMVideoSet.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9291BAB1DAC04450036B791 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9291B8C1DAC04450036B791 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9291B931DAC04450036B791;
+			remoteInfo = EOTMPlayer;
+		};
+		A9291BB61DAC04450036B791 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9291B8C1DAC04450036B791 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9291B931DAC04450036B791;
+			remoteInfo = EOTMPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5CD98E71264F164512051246 /* libPods-EOTMPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EOTMPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D5A5BFD5F3528FE29367B1 /* Pods-EOTMPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOTMPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EOTMPlayer/Pods-EOTMPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		A9291B941DAC04450036B791 /* EOTMPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EOTMPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9291B981DAC04450036B791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9291B9A1DAC04450036B791 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9291B9B1DAC04450036B791 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9291B9D1DAC04450036B791 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A9291B9E1DAC04450036B791 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A9291BA11DAC04450036B791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9291BA31DAC04450036B791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9291BA51DAC04450036B791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9291BAA1DAC04450036B791 /* EOTMPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EOTMPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9291BAE1DAC04450036B791 /* EOTMPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOTMPlayerTests.m; sourceTree = "<group>"; };
+		A9291BB01DAC04450036B791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9291BB51DAC04450036B791 /* EOTMPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EOTMPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9291BB91DAC04450036B791 /* EOTMPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOTMPlayerUITests.m; sourceTree = "<group>"; };
+		A9291BBB1DAC04450036B791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9291BC81DAC04620036B791 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A9291BC91DAC04620036B791 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		A9FD73471DAC6CCC00A2704E /* EOTMVideoSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOTMVideoSet.h; sourceTree = "<group>"; };
+		A9FD73481DAC6CCC00A2704E /* EOTMVideoSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOTMVideoSet.m; sourceTree = "<group>"; };
+		AE97E8A1F1E342F9B1C6DBB7 /* Pods-EOTMPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOTMPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-EOTMPlayer/Pods-EOTMPlayer.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9291B911DAC04450036B791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9291BCA1DAC04620036B791 /* AVFoundation.framework in Frameworks */,
+				A9291BCB1DAC04620036B791 /* AVKit.framework in Frameworks */,
+				72F08F3565E1427A4AF38076 /* libPods-EOTMPlayer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9291BA71DAC04450036B791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9291BB21DAC04450036B791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08CB7279FE8A1DB591EBCC83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61D5A5BFD5F3528FE29367B1 /* Pods-EOTMPlayer.debug.xcconfig */,
+				AE97E8A1F1E342F9B1C6DBB7 /* Pods-EOTMPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9291B8B1DAC04450036B791 = {
+			isa = PBXGroup;
+			children = (
+				A9291B961DAC04450036B791 /* EOTMPlayer */,
+				A9291BAD1DAC04450036B791 /* EOTMPlayerTests */,
+				A9291BB81DAC04450036B791 /* EOTMPlayerUITests */,
+				A9291B951DAC04450036B791 /* Products */,
+				A9291BC71DAC04620036B791 /* Frameworks */,
+				08CB7279FE8A1DB591EBCC83 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A9291B951DAC04450036B791 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9291B941DAC04450036B791 /* EOTMPlayer.app */,
+				A9291BAA1DAC04450036B791 /* EOTMPlayerTests.xctest */,
+				A9291BB51DAC04450036B791 /* EOTMPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9291B961DAC04450036B791 /* EOTMPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A9FD73471DAC6CCC00A2704E /* EOTMVideoSet.h */,
+				A9FD73481DAC6CCC00A2704E /* EOTMVideoSet.m */,
+				A9291B9A1DAC04450036B791 /* AppDelegate.h */,
+				A9291B9B1DAC04450036B791 /* AppDelegate.m */,
+				A9291B9D1DAC04450036B791 /* ViewController.h */,
+				A9291B9E1DAC04450036B791 /* ViewController.m */,
+				A9291BA01DAC04450036B791 /* Main.storyboard */,
+				A9291BA31DAC04450036B791 /* Assets.xcassets */,
+				A9291BA51DAC04450036B791 /* Info.plist */,
+				A9291B971DAC04450036B791 /* Supporting Files */,
+			);
+			path = EOTMPlayer;
+			sourceTree = "<group>";
+		};
+		A9291B971DAC04450036B791 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9291B981DAC04450036B791 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9291BAD1DAC04450036B791 /* EOTMPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9291BAE1DAC04450036B791 /* EOTMPlayerTests.m */,
+				A9291BB01DAC04450036B791 /* Info.plist */,
+			);
+			path = EOTMPlayerTests;
+			sourceTree = "<group>";
+		};
+		A9291BB81DAC04450036B791 /* EOTMPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9291BB91DAC04450036B791 /* EOTMPlayerUITests.m */,
+				A9291BBB1DAC04450036B791 /* Info.plist */,
+			);
+			path = EOTMPlayerUITests;
+			sourceTree = "<group>";
+		};
+		A9291BC71DAC04620036B791 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9291BC81DAC04620036B791 /* AVFoundation.framework */,
+				A9291BC91DAC04620036B791 /* AVKit.framework */,
+				5CD98E71264F164512051246 /* libPods-EOTMPlayer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9291B931DAC04450036B791 /* EOTMPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9291BBE1DAC04450036B791 /* Build configuration list for PBXNativeTarget "EOTMPlayer" */;
+			buildPhases = (
+				7EC677036345CB84A9636F16 /* [CP] Check Pods Manifest.lock */,
+				A9291B901DAC04450036B791 /* Sources */,
+				A9291B911DAC04450036B791 /* Frameworks */,
+				A9291B921DAC04450036B791 /* Resources */,
+				79991640BA03527BF39025AC /* [CP] Embed Pods Frameworks */,
+				3391663D1AEC3DFDB12000AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EOTMPlayer;
+			productName = EOTMPlayer;
+			productReference = A9291B941DAC04450036B791 /* EOTMPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9291BA91DAC04450036B791 /* EOTMPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9291BC11DAC04450036B791 /* Build configuration list for PBXNativeTarget "EOTMPlayerTests" */;
+			buildPhases = (
+				A9291BA61DAC04450036B791 /* Sources */,
+				A9291BA71DAC04450036B791 /* Frameworks */,
+				A9291BA81DAC04450036B791 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9291BAC1DAC04450036B791 /* PBXTargetDependency */,
+			);
+			name = EOTMPlayerTests;
+			productName = EOTMPlayerTests;
+			productReference = A9291BAA1DAC04450036B791 /* EOTMPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9291BB41DAC04450036B791 /* EOTMPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9291BC41DAC04450036B791 /* Build configuration list for PBXNativeTarget "EOTMPlayerUITests" */;
+			buildPhases = (
+				A9291BB11DAC04450036B791 /* Sources */,
+				A9291BB21DAC04450036B791 /* Frameworks */,
+				A9291BB31DAC04450036B791 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9291BB71DAC04450036B791 /* PBXTargetDependency */,
+			);
+			name = EOTMPlayerUITests;
+			productName = EOTMPlayerUITests;
+			productReference = A9291BB51DAC04450036B791 /* EOTMPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9291B8C1DAC04450036B791 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = space150;
+				TargetAttributes = {
+					A9291B931DAC04450036B791 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CH5DCD7T87;
+						ProvisioningStyle = Automatic;
+					};
+					A9291BA91DAC04450036B791 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CH5DCD7T87;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9291B931DAC04450036B791;
+					};
+					A9291BB41DAC04450036B791 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CH5DCD7T87;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9291B931DAC04450036B791;
+					};
+				};
+			};
+			buildConfigurationList = A9291B8F1DAC04450036B791 /* Build configuration list for PBXProject "EOTMPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9291B8B1DAC04450036B791;
+			productRefGroup = A9291B951DAC04450036B791 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9291B931DAC04450036B791 /* EOTMPlayer */,
+				A9291BA91DAC04450036B791 /* EOTMPlayerTests */,
+				A9291BB41DAC04450036B791 /* EOTMPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9291B921DAC04450036B791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9291BA41DAC04450036B791 /* Assets.xcassets in Resources */,
+				A9291BA21DAC04450036B791 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9291BA81DAC04450036B791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9291BB31DAC04450036B791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3391663D1AEC3DFDB12000AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOTMPlayer/Pods-EOTMPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79991640BA03527BF39025AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOTMPlayer/Pods-EOTMPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EC677036345CB84A9636F16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9291B901DAC04450036B791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9291B9F1DAC04450036B791 /* ViewController.m in Sources */,
+				A9291B9C1DAC04450036B791 /* AppDelegate.m in Sources */,
+				A9291B991DAC04450036B791 /* main.m in Sources */,
+				A9FD73491DAC6CCC00A2704E /* EOTMVideoSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9291BA61DAC04450036B791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9291BAF1DAC04450036B791 /* EOTMPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9291BB11DAC04450036B791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9291BBA1DAC04450036B791 /* EOTMPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9291BAC1DAC04450036B791 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9291B931DAC04450036B791 /* EOTMPlayer */;
+			targetProxy = A9291BAB1DAC04450036B791 /* PBXContainerItemProxy */;
+		};
+		A9291BB71DAC04450036B791 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9291B931DAC04450036B791 /* EOTMPlayer */;
+			targetProxy = A9291BB61DAC04450036B791 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9291BA01DAC04450036B791 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9291BA11DAC04450036B791 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9291BBC1DAC04450036B791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		A9291BBD1DAC04450036B791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9291BBF1DAC04450036B791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D5A5BFD5F3528FE29367B1 /* Pods-EOTMPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = CH5DCD7T87;
+				INFOPLIST_FILE = EOTMPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.s150.ent.EOTMPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A9291BC01DAC04450036B791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE97E8A1F1E342F9B1C6DBB7 /* Pods-EOTMPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = CH5DCD7T87;
+				INFOPLIST_FILE = EOTMPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.s150.ent.EOTMPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A9291BC21DAC04450036B791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CH5DCD7T87;
+				INFOPLIST_FILE = EOTMPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.s150.ent.EOTMPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOTMPlayer.app/EOTMPlayer";
+			};
+			name = Debug;
+		};
+		A9291BC31DAC04450036B791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CH5DCD7T87;
+				INFOPLIST_FILE = EOTMPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.s150.ent.EOTMPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOTMPlayer.app/EOTMPlayer";
+			};
+			name = Release;
+		};
+		A9291BC51DAC04450036B791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = CH5DCD7T87;
+				INFOPLIST_FILE = EOTMPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.s150.ent.EOTMPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EOTMPlayer;
+			};
+			name = Debug;
+		};
+		A9291BC61DAC04450036B791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = CH5DCD7T87;
+				INFOPLIST_FILE = EOTMPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.s150.ent.EOTMPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EOTMPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9291B8F1DAC04450036B791 /* Build configuration list for PBXProject "EOTMPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9291BBC1DAC04450036B791 /* Debug */,
+				A9291BBD1DAC04450036B791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9291BBE1DAC04450036B791 /* Build configuration list for PBXNativeTarget "EOTMPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9291BBF1DAC04450036B791 /* Debug */,
+				A9291BC01DAC04450036B791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9291BC11DAC04450036B791 /* Build configuration list for PBXNativeTarget "EOTMPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9291BC21DAC04450036B791 /* Debug */,
+				A9291BC31DAC04450036B791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9291BC41DAC04450036B791 /* Build configuration list for PBXNativeTarget "EOTMPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9291BC51DAC04450036B791 /* Debug */,
+				A9291BC61DAC04450036B791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9291B8C1DAC04450036B791 /* Project object */;
+}
